@@ -276,15 +276,18 @@ body {
 }
 
 .index-content {
-  flex: 1;
+  margin: auto 0;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 120px;
-  padding-top: 20px;
+  padding-top: 0;
 }
 
 .index-title-area {
-  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
 }
 
 .index-title-area h2 {
@@ -305,7 +308,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0;
-  padding-top: 60px;
 }
 
 .index-item {
@@ -364,12 +366,12 @@ body {
 }
 
 .resume-content {
-  flex: 1;
+  margin: auto 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   gap: 0;
-  padding-top: 10px;
+  align-content: center;
 }
 
 .resume-profile {
@@ -493,10 +495,10 @@ body {
 }
 
 .about-content {
-  flex: 1;
+  margin: auto 0;
   display: flex;
   gap: 60px;
-  align-items: stretch;
+  align-items: center;
 }
 
 .about-photo {
@@ -531,7 +533,7 @@ body {
 .about-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px 40px;
+  gap: 40px 40px;
   flex: 1;
   max-height: fit-content;
 }
@@ -564,7 +566,7 @@ body {
 }
 
 .tech-content {
-  flex: 1;
+  margin: auto 0;
   display: grid;
   grid-template-columns: 300px 1fr;
   grid-template-rows: 1fr 1fr;
@@ -657,10 +659,11 @@ body {
 }
 
 .work-content {
-  flex: 1;
+  margin: auto 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
+  align-content: center;
 }
 
 .work-left {
@@ -792,10 +795,11 @@ body {
 }
 
 .project-content {
-  flex: 1;
+  margin: auto 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
+  align-content: center;
 }
 
 .project-links {
@@ -957,7 +961,7 @@ body {
 }
 
 .thanks-content {
-  flex: 1;
+  margin: auto 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
