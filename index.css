@@ -47,7 +47,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 18px;
   overflow: hidden;
   height: 100%;
 }
@@ -925,7 +925,7 @@ body {
   left: 0;
   width: 90%;
   height: 60%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: top;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-card);
@@ -938,7 +938,7 @@ body {
   right: 0;
   width: 90%;
   height: 60%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: top;
   border-radius: var(--radius-md);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
