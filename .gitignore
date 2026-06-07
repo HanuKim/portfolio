@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# 미사용 이미지 제외
+assets/img_p*
+assets/agorax_0_*
+assets/agorax_1_*
+assets/agorax_2_*
+assets/agorax_3_*
+assets/agorax_6_*

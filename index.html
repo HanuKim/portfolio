@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="소프트웨어 개발자 김한울 포트폴리오 - 문제를 정의하고 해결하는 풀스택 개발자">
+  <title>Portfolio | Developer Kim Hanul</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <!-- Navigation Dots -->
+  <nav class="nav-dots" aria-label="섹션 네비게이션" id="navDots">
+    <button class="nav-dot active" data-section="0" aria-label="표지"><span class="tooltip">표지</span></button>
+    <button class="nav-dot" data-section="1" aria-label="목차"><span class="tooltip">목차</span></button>
+    <button class="nav-dot" data-section="2" aria-label="이력사항"><span class="tooltip">이력사항</span></button>
+    <button class="nav-dot" data-section="3" aria-label="자기소개"><span class="tooltip">자기소개</span></button>
+    <button class="nav-dot" data-section="4" aria-label="기술스택"><span class="tooltip">기술스택</span></button>
+    <button class="nav-dot" data-section="5" aria-label="실무경험 1"><span class="tooltip">Easy HACCP (1)</span></button>
+    <button class="nav-dot" data-section="6" aria-label="실무경험 2"><span class="tooltip">Easy HACCP (2)</span></button>
+    <button class="nav-dot" data-section="7" aria-label="실무경험 3"><span class="tooltip">커뮤니티/몰 플랫폼</span></button>
+    <button class="nav-dot" data-section="8" aria-label="프로젝트 1"><span class="tooltip">배리어프리 이음</span></button>
+    <button class="nav-dot" data-section="9" aria-label="프로젝트 2"><span class="tooltip">BOJ Never Die</span></button>
+    <button class="nav-dot" data-section="10" aria-label="프로젝트 3"><span class="tooltip">Find Blue</span></button>
+    <button class="nav-dot" data-section="11" aria-label="프로젝트 4"><span class="tooltip">Agora-X</span></button>
+    <button class="nav-dot" data-section="12" aria-label="감사인사"><span class="tooltip">감사합니다</span></button>
+  </nav>
+
+  <!-- Scroll Container -->
+  <main class="scroll-container" id="scrollContainer">
+
+    <!-- ===== Page 1: Cover ===== -->
+    <section class="section section-cover" id="section-0">
+      <div class="cover-top">
+        <span class="label-small">PORTFOLIO</span>
+        <span class="label-small">DEVELOPER KIM HANUL</span>
+        <span class="date">~ 2026. 06.</span>
+      </div>
+      <div class="cover-content">
+        <p class="subtitle">문제를 정의하고 해결하는 개발자, 김한울</p>
+        <h1 class="title">포트폴리오</h1>
+      </div>
+      <div class="cover-bottom">
+        <span class="info-item">소프트웨어개발자 김한울</span>
+
+        <span class="info-item"><a href="mailto:dev.hanulkim@gmail.com">dev.hanulkim@gmail.com</a></span>
+      </div>
+      <div class="scroll-indicator" id="scrollIndicator">
+        <span class="text">Scroll Down</span>
+        <span class="arrow-down"></span>
+      </div>
+    </section>
+
+    <!-- ===== Page 2: Index ===== -->
+    <section class="section section-index" id="section-1">
+      <div class="section-header">
+        <div class="left">
+          <span class="label-small">PORTFOLIO</span>
+        </div>
+        <div class="right">
+          <span class="label-en">DEVELOPER KIM HANUL</span>
+          <span class="label-en-large">~ 2026. 06.</span>
+        </div>
+      </div>
+      <div class="index-content reveal">
+        <div class="index-title-area">
+          <h2>목차</h2>
+          <p class="en-title">INDEX</p>
+        </div>
+        <div class="index-list">
+          <div class="index-item" data-goto="2">
+            <span class="num">01</span>
+            <span class="name">이력사항</span>
+            <span class="page">P.3</span>
+            <span class="arrow">→</span>
+          </div>
+          <div class="index-item" data-goto="3">
+            <span class="num">02</span>
+            <span class="name">자기소개</span>
+            <span class="page">P.4</span>
+            <span class="arrow">→</span>
+          </div>
+          <div class="index-item" data-goto="4">
+            <span class="num">03</span>
+            <span class="name">기술스택</span>
+            <span class="page">P.5</span>
+            <span class="arrow">→</span>
+          </div>
+          <div class="index-item" data-goto="5">
+            <span class="num">04</span>
+            <span class="name">실무 및 프로젝트 경험</span>
+            <span class="page">P.6</span>
+            <span class="arrow">→</span>
+          </div>
+        </div>
+      </div>
+      <span class="page-num">2</span>
+    </section>
+
+    <!-- ===== Page 3: Resume ===== -->
+    <section class="section section-resume" id="section-2">
+      <div class="section-header">
+        <div class="left">
+          <span class="label-small">PORTFOLIO</span>
+          <span class="label-kr">이력사항</span>
+        </div>
+        <div class="right">
+          <span class="label-en">DEVELOPER KIM HANUL</span>
+          <span class="label-en-large">RESUME</span>
+        </div>
+      </div>
+      <div class="resume-content">
+        <div class="resume-profile reveal">
+          <h2 class="name-kr">김한울</h2>
+          <div class="info-grid">
+            <span class="label">KIM HANUL</span>
+            <span>dev.hanulkim@gmail.com</span>
+          </div>
+          <div class="links">
+            <a href="https://velog.io/@aouoa/posts" target="_blank">
+              <span class="icon">V</span>
+              기술블로그
+            </a>
+            <a href="https://github.com/HanuKim" target="_blank">
+              <span class="icon">G</span>
+              Github
+            </a>
+          </div>
+        </div>
+
+        <div class="resume-section reveal reveal-delay-1">
+          <div class="resume-section-title">
+            <span class="num">01</span>
+            <h3>학력사항</h3>
+          </div>
+          <div class="resume-entry">
+            <span class="date">2022. 08</span>
+            <span class="desc">건국대학교 정치외교학과 졸업 (학점: 4.14 / 4.5)</span>
+          </div>
+        </div>
+
+        <div class="resume-section reveal reveal-delay-2">
+          <div class="resume-section-title">
+            <span class="num">02</span>
+            <h3>교육</h3>
+          </div>
+          <div class="resume-entry">
+            <span class="date">2026. 01 – 진행 중</span>
+            <span class="desc">삼성청년소프트웨어·AI아카데미</span>
+          </div>
+          <div class="resume-entry">
+            <span class="date">2022. 10 – 2023. 03</span>
+            <span class="desc">내일배움캠프 REACT 과정 수료</span>
+          </div>
+        </div>
+
+        <div class="resume-section reveal reveal-delay-3">
+          <div class="resume-section-title">
+            <span class="num">03</span>
+            <h3>경력사항</h3>
+          </div>
+          <div class="resume-entry">
+            <span class="date">2024. 10 – 2025. 08</span>
+            <span class="desc">(주)편세어 풀스택 개발</span>
+          </div>
+          <div class="resume-entry">
+            <span class="date">2023. 08 – 2024. 09</span>
+            <span class="desc">(주)로맨 프론트엔드 개발</span>
+          </div>
+        </div>
+
+        <div class="resume-section reveal reveal-delay-4">
+          <div class="resume-section-title">
+            <span class="num">04</span>
+            <h3>자격사항</h3>
+          </div>
+          <div class="resume-entry">
+            <span class="date">SQLD (2025. 12)</span>
+            <span class="desc"></span>
+          </div>
+        </div>
+      </div>
+      <span class="page-num">3</span>
+    </section>
+
+    <!-- ===== Page 4: About Me ===== -->
+    <section class="section section-about" id="section-3">
+      <div class="section-header">
+        <div class="left">
+          <span class="label-small">PORTFOLIO</span>
+          <span class="label-kr">자기소개</span>
+        </div>
+        <div class="right">
+          <span class="label-en">DEVELOPER KIM HANUL</span>
+          <span class="label-en-large">ABOUT ME</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="about-photo reveal">
+          <img src="assets/profile.png" alt="프로필 사진" loading="lazy">
+        </div>
+        <div class="about-text">
+          <h2 class="greeting reveal">안녕하세요! 2년차 개발자 김한울입니다.</h2>
+          <div class="about-columns">
+            <div class="about-block reveal reveal-delay-1">
+              <h4>코드로 답을 찾는 사람</h4>
+              <p>전공수업에서 우연히 R을 다뤘을 때, 프로그래밍이 가진 명확함에 매료됐습니다. 모호한 해석이 공존하는 인문·사회과학과 달리, 코드는 올바른 로직이 있으면 반드시 원하는 결과를
+                만들어냈습니다. <br> <strong>제 손으로 직접 변화를 만들어낼 수 있다</strong>는 점이 적성과 맞닿아 있다고 느껴, 개발자의 길로 들어섰습니다. 지금도 명확함을
+                찾아가고
+                의미있는 변화를 만들어가는 과정에 보람을 느끼고 있습니다.</p>
+            </div>
+            <div class="about-block reveal reveal-delay-2">
+              <h4>끝까지 책임지는 개발</h4>
+              <p>QA 전날이면 동료들의 시간이 낭비되지 않도록, 제 선에서 방지할 수 있는 버그는 야근을 마다하지 않고 최대한 수정해두도록 하였습니다. 제가 할 수 있는 <strong>최선을
+                  고민</strong>하고, 완료된 기능이라도 더 나은 방법이 보이면 다시 들여다봅니다. 새로운 기술을 꾸준히 학습하는 것도 책임의 일부라고 생각하며, 서비스 품질을 높이는 데 사용할
+                수 있는 역량을 갖춰두려고 합니다. 회사 제품에 <strong>주인의식</strong>을 갖는 것이 곧 개발자로서의 성장과
+                연결된다고 믿습니다.</p>`
+            </div>
+            <div class="about-block reveal reveal-delay-3">
+              <h4>프론트엔드에서 시작해 풀스택으로 확장</h4>
+              <p>프론트엔드 개발자로 커리어를 시작해 점차 백엔드와 DB 설계까지 역량을 확장해왔습니다. 2년간 실무를 거치며 <strong>사용자 경험을 중심에 두고</strong> 서비스를 어떻게 더
+                잘 만들 수 있을지 끊임없이 고민해왔으며, 그 고민이 기술 스택의 경계를 자연스럽게 넓혀주었습니다.</p>
+            </div>
+            <div class="about-block reveal reveal-delay-4">
+              <h4>맥락을 읽는 협업</h4>
+              <p>질문 하나를 하더라도 동료의 시간을 아낄 수 있도록 먼저 정리해서 묻고, 사소한 것이라도 공유가 필요하다면 먼저 말을 꺼내는 편입니다. 대화 상대가 개발자이든 기획자·디자이너이든,
+                상대방이 익숙한 언어로 이야기할 수 있도록 합니다. 부서가 달라도 <strong>결국 같은 목표를 향해 일하는 동료</strong>라는 인식 아래, <strong>서로의 영역을 이해하고
+                  존중하는 협업</strong>을 중요하게 여깁니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="page-num">4</span>
+    </section>
+
+    <!-- ===== Page 5: Tech Stack ===== -->
+    <section class="section section-tech" id="section-4">
+      <div class="section-header">
+        <div class="left">
+          <span class="label-small">PORTFOLIO</span>
+          <span class="label-kr">기술스택</span>
+        </div>
+        <div class="right">
+          <span class="label-en">DEVELOPER KIM HANUL</span>
+          <span class="label-en-large">TECH STACK</span>
+        </div>
+      </div>
+      <div class="tech-content reveal">
+        <div class="tech-title-area">
+          <h2>보유 기술 스택</h2>
+        </div>
+
+        <!-- Frontend -->
+        <div class="tech-category">
+          <div class="tech-category-row">
+            <div class="tech-group">
+              <h3>Frontend</h3>
+              <div class="skill-item">
+                <span class="name">HTML5/CSS</span>
+                <div class="skill-bar" data-level="7"></div>
+              </div>
+              <div class="skill-item">
+                <span class="name">React</span>
+                <div class="skill-bar" data-level="7"></div>
+              </div>
+              <div class="skill-item">
+                <span class="name">Next.js</span>
+                <div class="skill-bar" data-level="5"></div>
+              </div>
+              <div class="skill-item">
+                <span class="name">Tailwind CSS</span>
+                <div class="skill-bar" data-level="7"></div>
+              </div>
+            </div>
+            <div class="tech-group">
+              <h3>&nbsp;</h3>
+              <div class="skill-item">
+                <span class="name">JavaScript</span>
+                <div class="skill-bar" data-level="7"></div>
+              </div>
+              <div class="skill-item">
+                <span class="name">Flutter</span>
+                <div class="skill-bar" data-level="6"></div>
+              </div>
+              <div class="skill-item">
+                <span class="name">TypeScript</span>
+                <div class="skill-bar" data-level="4"></div>
+              </div>
+              <div class="skill-item">
+                <span class="name">Zustand</span>
+                <div class="skill-bar" data-level="5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend / Database + Collaboration -->
+        <div class="tech-category">
+          <div class="tech-category-row">
+            <div class="tech-group">
+              <h3>Backend / Database</h3>
+              <div class="skill-item">
+                <span class="name">Node.js</span>
+                <div class="skill-bar" data-level="5"></div>
+              </div>
+              <div class="skill-item">
+                <span class="name">Java</span>
+                <div class="skill-bar" data-level="3"></div>
+              </div>
+              <div class="skill-item">
+                <span class="name">MySQL</span>
+                <div class="skill-bar" data-level="5"></div>
+              </div>
+            </div>
+            <div class="tech-group">
+              <h3>협업 툴</h3>
+              <div class="skill-item">
+                <span class="name">Git</span>
+                <div class="skill-bar" data-level="7"></div>
+              </div>
+              <div class="skill-item">
+                <span class="name">Jira</span>
+                <div class="skill-bar" data-level="7"></div>
+              </div>
+              <div class="skill-item">
+                <span class="name">Notion</span>
+                <div class="skill-bar" data-level="7"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="page-num">5</span>
+    </section>
+
+    <!-- ===== Page 6: Easy HACCP WEB/Mobile (1) ===== -->
+    <section class="section section-work" id="section-5">
+      <div class="section-header">
+        <div class="left">
+          <span class="label-small">PORTFOLIO</span>
+          <span class="label-kr">실무 경험</span>
+        </div>
+        <div class="right">
+          <span class="label-en">DEVELOPER KIM HANUL</span>
+          <span class="label-en-large">WORK EXPERIENCE</span>
+        </div>
+      </div>
+      <div class="work-content">
+        <div class="work-left reveal">
+          <h2 class="work-project-title">Easy HACCP WEB/Mobile (1)</h2>
+          <div class="work-meta">
+            <div class="work-meta-row">
+              <span class="label">제작기간</span>
+              <span class="value">2024. 11 – 2025. 04</span>
+              <span class="work-badge">6개월 소요</span>
+            </div>
+            <div class="work-meta-row">
+              <span class="label">기여도</span>
+              <span class="value">프론트 : 40 / 100%&nbsp;&nbsp;백 : 30 / 100%</span>
+              <span class="work-badge">3인 개발</span>
+            </div>
+            <div class="work-meta-row">
+              <span class="label">사용기술</span>
+              <span class="value">Flutter, GetX, Node.js, MySQL</span>
+            </div>
+          </div>
+          <div class="work-overview">
+            <h4>서비스 개요</h4>
+            <p>식품 제조전 과정에서 HACCP 관련 업무를 자동화하는 MES(Manufacturing Execution System) 솔루션. <br>
+              기획부터 관계형 DB 설계, 풀스택 개발까지 담당.
+            </p>
+          </div>
+          <div class="work-features">
+            <h4>제공 기능</h4>
+            <ol>
+              <li>제조실 온도 데이터 실시간 모니터링 및 기록</li>
+              <li>제조 과정 및 점검 내용을 텍스트나 이미지 등으로 기록</li>
+              <li>모바일 앱을 통해 오프라인 환경에서 작업 가능</li>
+              <li>온도나 모니터링 기록에 문제가 발견되면 알림 발송</li>
+            </ol>
+          </div>
+        </div>
+        <div class="work-right reveal reveal-delay-1">
+          <h3>배운 점 및 성과</h3>
+          <div class="work-achievement">
+            <h4>1. 오프라인 환경 대응 – 로컬 저장 후 자동 동기화</h4>
+            <p>사용 현장이 네트워크가 불안정한 환경일 수 있다는 점을 고려해, Hive(로컬 NoSQL DB)를 도입하여 오프라인 상태에서도 데이터를 수정·저장할 수 있도록 처리했습니다. 이후 네트워크가
+              재연결되면 로컬에 쌓인 변경 데이터를 서버로 자동 전송하는 동기화 로직을 구현하여, 연결 상태와 무관하게 업무 흐름이 끊기지 않도록 했습니다.</p>
+          </div>
+          <div class="work-achievement">
+            <h4>2. 연속 API 요청 최적화 – 디바운스 적용</h4>
+            <p>조회 날짜를 빠르게 이동하는 등 단시간 내 동일한 API 요청이 과다 발생하는 상황에서, 디바운스(debounce)를 적용해 마지막 입력 이후 일정 시간이 경과한 요청만 서버로 전달하도록
+              처리했습니다. 불필요한 네트워크 트래픽을 줄이고 서버 부하를 낮추는 동시에, 사용자 입장에서도 응답이 더 명확하게 반환되는 효과를 얻었습니다.</p>
+          </div>
+        </div>
+      </div>
+      <span class="page-num">6</span>
+    </section>
+
+    <!-- ===== Page 7: Easy HACCP WEB/Mobile (2) ===== -->
+    <section class="section section-work" id="section-6">
+      <div class="section-header">
+        <div class="left">
+          <span class="label-small">PORTFOLIO</span>
+          <span class="label-kr">실무 경험</span>
+        </div>
+        <div class="right">
+          <span class="label-en">DEVELOPER KIM HANUL</span>
+          <span class="label-en-large">WORK EXPERIENCE</span>
+        </div>
+      </div>
+      <div class="work-content">
+        <div class="work-left reveal">
+          <h2 class="work-project-title">Easy HACCP WEB/Mobile (2)</h2>
+          <div class="work-achievement">
+            <h4>3. 미디어 업로드 처리 서버 위임 – 클라이언트 API 호출 단순화</h4>
+            <p>기존에는 클라이언트에서 미디어 파일 저장 API를 먼저 호출해 반환된 파일 URL을 받은 뒤, 해당 값을 포함해 원본 데이터 저장 API를 다시 호출하는 2단계 구조였습니다. 이를
+              클라이언트는 데이터 저장 API 하나만 호출하고, 서버 내부에서 미디어 파일 저장 유틸 함수를 실행해 URL을 처리한 뒤 데이터를 저장하는 구조로 리팩토링했습니다. 이를 통해 클라이언트의
+              API 호출 복잡도와 순서 의존성을 제거하고, 미디어 처리 로직을 서버에서 일관되게 관리할 수 있게 되었습니다.</p>
+          </div>
+          <div class="work-achievement">
+            <h4>4. 실시간 데이터 반영 – SSE 기반 앱·웹 동기화</h4>
+            <p>앱에서 온도 측정이 발생하면 웹 화면에도 즉시 반영되어야 하는 요구사항을 SSE(Server-Sent Events)로 해결했습니다. 폴링 방식 대비 서버 부하를 줄이면서도 단방향 스트림으로
+              변경 이벤트를 클라이언트에 푸시하여, 사용자가 페이지를 새로고침하지 않아도 최신 데이터를 볼 수 있도록 실시간성을 보장했습니다.</p>
+          </div>
+        </div>
+        <div class="work-right reveal reveal-delay-1">
+          <div class="work-achievement">
+            <h4>5. 공용 컴포넌트 추출 – 중복 UI 로직 일원화</h4>
+            <p>캘린더 등 프로젝트 내 여러 화면에 유사한 형태로 중복 구현되어 있던 UI 요소들을 공용 컴포넌트로 관리하도록 리팩토링하였습니다.</p>
+          </div>
+          <div class="work-achievement">
+            <h4>6. 온도 데이터 조회 속도 개선 – SQL 집계 함수로 전환</h4>
+            <p>대량의 온도 데이터 조회 시 애플리케이션 레이어에서 수행하던 필터링·집계 전처리 로직을 SQL 쿼리 내 집계 함수(GROUP BY / 집계 함수)로 이전했습니다. 불필요한 데이터를 DB에서
+              전량 조회한 후 서버에서 가공하던 방식을 DB 단에서 필요한 결과만 산출하도록 개선하여, 조회 응답 시간을 3초대 → 1초대로 단축했습니다.</p>
+          </div>
+          <div class="work-achievement">
+            <h4>7. 다중 행 조회 병렬화 – Promise.all 적용</h4>
+            <p>여러 행을 한 번에 조회할 때 순차적으로 API를 호출하던 구조를 Promise.all 패턴으로 전환하여 병렬 처리했습니다. 직렬 호출 시 각 요청의 응답 시간이 누적되어 전체 대기 시간이
+              늘어나던 문제를 해결하고, 동시 요청을 통해 실질적인 응답 시간을 단축했습니다. 결과적으로 가장 느린 단일 요청 시간이 전체 시간의 상한이 되는 구조로 개선되었습니다.</p>
+          </div>
+        </div>
+      </div>
+      <span class="page-num">7</span>
+    </section>
+
+    <!-- ===== Page 8: 커뮤니티/몰 통합 플랫폼 ===== -->
+    <section class="section section-work" id="section-7">
+      <div class="section-header">
+        <div class="left">
+          <span class="label-small">PORTFOLIO</span>
+          <span class="label-kr">실무 경험</span>
+        </div>
+        <div class="right">
+          <span class="label-en">DEVELOPER KIM HANUL</span>
+          <span class="label-en-large">WORK EXPERIENCE</span>
+        </div>
+      </div>
+      <div class="work-content">
+        <div class="work-left reveal">
+          <h2 class="work-project-title">자사 커뮤니티/몰 통합 플랫폼 구축</h2>
+          <div class="work-meta">
+            <div class="work-meta-row">
+              <span class="label">제작기간</span>
+              <span class="value">2023. 11 – 2024. 05</span>
+            </div>
+            <div class="work-meta-row">
+              <span class="label">기여도</span>
+              <span class="value">프론트 : 35 / 100%</span>
+              <span class="work-badge">3인 개발</span>
+            </div>
+            <div class="work-meta-row">
+              <span class="label">사용기술</span>
+              <span class="value">React, Next.js, TanStack Query, Zustand</span>
+            </div>
+          </div>
+          <div class="work-overview">
+            <h4>서비스 개요</h4>
+            <p>커뮤니티와 굿즈 몰이 결합된 자사 일러스트 플랫폼 구축 프로젝트.</p>
+          </div>
+          <div class="work-features">
+            <h4>제공 기능</h4>
+            <ol>
+              <li>일러스트 관련 이벤트나 굿즈에 대해 소통할 수 있는 커뮤니티 기능</li>
+              <li>관심 작가를 등록하고 굿즈가 발매되면 알림 발송</li>
+              <li>일러스트 굿즈 구입 및 교환, 환불 등의 절차 제공</li>
+            </ol>
+          </div>
+        </div>
+        <div class="work-right reveal reveal-delay-1">
+          <h3>배운 점 및 성과</h3>
+          <div class="work-achievement">
+            <h4>1. SEO·웹 표준·웹 접근성 고려</h4>
+            <p>자사 커뮤니티·몰 플랫폼의 검색 노출을 위해 Next.js를 채택하고, 시맨틱 태그 사용과 메타데이터·sitemap 설정을 통해 SEO 기반을 갖췄습니다. 예를 들어, 링크 이동이 발생하는
+              모든 요소에 반드시 Link(a) 태그를 사용하는 규칙을 적용해 웹 표준을 준수했습니다.</p>
+          </div>
+          <div class="work-achievement">
+            <h4>2. 서버·클라이언트 컴포넌트 분리 및 Hydration 에러 해결</h4>
+            <p>SEO 이점을 유지하기 위해 서버 컴포넌트와 클라이언트 컴포넌트의 경계를 명확히 구분하고, 불필요한 클라이언트 번들 증가를 방지했습니다. Hydration 에러 발생 시에는
+              useServerInsertedHTML을 활용해 서버에서 생성된 값을 window 전역 객체에 주입하고 클라이언트 컴포넌트에서 참조하는 방식으로 해결했습니다.</p>
+          </div>
+          <div class="work-achievement">
+            <h4>3. 디자인팀과의 협업을 통한 디자인 컨벤션 수립</h4>
+            <p>디자인 컨벤션 확립을 주도적으로 제안하여, 디자인팀과 긴밀히 협업하며 컴포넌트 단위의 디자인 컨벤션을 수립했습니다. 또한 상호 간 원활한 의사소통을 위해 용어를 통일했습니다. 컨벤션을
+              사전에 정의함으로써 구현 과정에서의 해석 차이를 줄이고, 이후 프로젝트에서도 일관된 UI 품질을 유지할 수 있었습니다.</p>
+          </div>
+        </div>
+      </div>
+      <span class="page-num">8</span>
+    </section>
+
+    <!-- ===== Page 9: 배리어프리 여행 플래너, 이음 ===== -->
+    <section class="section section-project" id="section-8">
+      <div class="section-header">
+        <div class="left">
+          <span class="label-small">PORTFOLIO</span>
+          <span class="label-kr">프로젝트</span>
+        </div>
+        <div class="right">
+          <span class="label-en">DEVELOPER KIM HANUL</span>
+          <span class="label-en-large">PROJECTS</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <div class="work-left reveal">
+          <div class="project-links">
+            <a href="https://i-eum.onrender.com/" target="_blank">
+              <svg class="icon-link" viewBox="0 0 16 16" fill="currentColor">
+                <path
+                  d="M4.715 6.542L3.343 7.914a3 3 0 104.243 4.243l1.828-1.829A3 3 0 008.586 5.5L8 6.086a1.002 1.002 0 00-.154.199 2 2 0 01.861 3.337L6.88 11.45a2 2 0 11-2.83-2.83l.793-.792a4.018 4.018 0 01-.128-1.287z" />
+                <path
+                  d="M6.586 4.672A3 3 0 007.414 9.5l.775-.776a2 2 0 01-.896-3.346L9.12 3.55a2 2 0 112.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 10-4.243-4.243L6.586 4.672z" />
+              </svg>
+              서비스 바로가기
+            </a>
+            <a href="https://github.com/Modu-org/frontend" target="_blank">
+              <svg class="icon-link" viewBox="0 0 16 16" fill="currentColor">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              Github
+            </a>
+          </div>
+          <h2 class="work-project-title">배리어프리 여행 플래너, 이음</h2>
+          <div class="work-meta">
+            <div class="work-meta-row">
+              <span class="label">제작기간</span>
+              <span class="value">2026. 04. 22 – 진행 중</span>
+            </div>
+            <div class="work-meta-row">
+              <span class="label">기여도</span>
+              <span class="value">프론트 : 100 / 100%&nbsp;&nbsp;백 : 10 / 100%</span>
+              <span class="work-badge">2인 개발</span>
+            </div>
+            <div class="work-meta-row">
+              <span class="label">사용기술</span>
+              <span class="value">Vue.js, Pinia, Java(Spring Boot), MySQL</span>
+            </div>
+          </div>
+          <div class="work-overview">
+            <h4>서비스 개요</h4>
+            <p>"여행의 즐거움, 모두가 누릴 수 있도록"<br>장애인·노약자·유아 동반 가족을 위한 배리어프리 여행 플래너 서비스.</p>
+          </div>
+          <div class="work-features">
+            <h4>제공 기능</h4>
+            <ol>
+              <li>한국관광공사 Open API를 이용해 무장애 여행 정보 제공</li>
+              <li>사용자의 장애 요소에 대한 정보를 수집하여 맞춤형 정보 제공</li>
+              <li>음성 입력 기반 검색</li>
+              <li>여행 일정 관리 및 음성 입력 지원</li>
+              <li>접근성을 고려한 UI/UX, 글자 크기를 사용자가 자유롭게 조절</li>
+            </ol>
+          </div>
+        </div>
+        <div class="work-right reveal reveal-delay-1">
+          <h3>배운 점 및 성과</h3>
+          <div class="work-achievement">
+            <h4>1. 인증 토큰 관리 및 동시 갱신 처리</h4>
+            <p>액세스 토큰을 JS 메모리에서만 관리하여 브라우저 스토리지에 저장할 때에 비해 보안을 강화했습니다. 다만 이렇게 처리하면 새로고침 시 토큰이 소멸되는 문제가 존재하는데, 인터셉터에서
+              401에러 감지 시 리프레시 토큰 갱신을 하도록 하여 대응했습니다. 또한 동시 다발적으로 401에러가 발생하면 리프레시 토큰이 중복 요청되는 경우가 생겼습니다. 플래그 변수와 큐를 활용해 첫
+              번째 요청만 실행하고 나머지는 대기 후 일괄 재시도하는 방식으로 해결했습니다.</p>
+          </div>
+          <div class="work-achievement">
+            <h4>2. 음성 입력 기반 요청 자동 구성 – STT + Prompt Chaining</h4>
+            <p>Web Speech API로 변환한 텍스트와 type 파라미터를 서버로 전달하면, 백엔드에서 LLM API에 Prompt Chaining을 적용해 해당 요청에 맞는 API 요청 body를
+              자동으로 구성하도록 처리했습니다. 사용자가 음성으로 입력한 자연어를 구조화된 데이터로 변환하는 흐름을 서버 단에서 일관되게 처리했습니다.</p>
+          </div>
+          <div class="work-achievement">
+            <h4>3. 기획 단계부터 개발 체계 구축</h4>
+            <p>기획 문서 작성으로 시작으로 워크플로우 설계, ERD 기반 관계형 데이터베이스 설계, 와이어프레임 제작까지 직접 수행했으며, Github Project를 활용해 이슈 단위로 작업을 관리하며
+              프로젝트 전반의 개발 체계를 구축했습니다.</p>
+          </div>
+        </div>
+      </div>
+      <span class="page-num">9</span>
+    </section>
+
+    <!-- ===== Page 10: BOJ Never Die ===== -->
+    <section class="section section-project" id="section-9">
+      <div class="section-header">
+        <div class="left">
+          <span class="label-small">PORTFOLIO</span>
+          <span class="label-kr">프로젝트</span>
+        </div>
+        <div class="right">
+          <span class="label-en">DEVELOPER KIM HANUL</span>
+          <span class="label-en-large">PROJECTS</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <div class="work-left reveal">
+          <div class="project-links">
+            <a href="https://chromewebstore.google.com/detail/boj-never-die/flppfikgcmplonhoaepchlkgifomhfhg"
+              target="_blank">
+              <svg class="icon-link" viewBox="0 0 16 16" fill="currentColor">
+                <path
+                  d="M4.715 6.542L3.343 7.914a3 3 0 104.243 4.243l1.828-1.829A3 3 0 008.586 5.5L8 6.086a1.002 1.002 0 00-.154.199 2 2 0 01.861 3.337L6.88 11.45a2 2 0 11-2.83-2.83l.793-.792a4.018 4.018 0 01-.128-1.287z" />
+                <path
+                  d="M6.586 4.672A3 3 0 007.414 9.5l.775-.776a2 2 0 01-.896-3.346L9.12 3.55a2 2 0 112.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 10-4.243-4.243L6.586 4.672z" />
+              </svg>
+              웹 스토어 링크
+            </a>
+            <a href="https://github.com/HanuKim/boj-never-die" target="_blank">
+              <svg class="icon-link" viewBox="0 0 16 16" fill="currentColor">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              Github
+            </a>
+          </div>
+          <h2 class="work-project-title">백준 채점용 크롬 익스텐션, BOJ Never Die</h2>
+          <div class="work-meta">
+            <div class="work-meta-row">
+              <span class="label">제작기간</span>
+              <span class="value">2026. 04. 16 – 2026. 04. 17</span>
+              <span class="work-badge">2일 소요</span>
+            </div>
+            <div class="work-meta-row">
+              <span class="label">기여도</span>
+              <span class="value">100 / 100%</span>
+              <span class="work-badge">1인 개발</span>
+            </div>
+            <div class="work-meta-row">
+              <span class="label">사용기술</span>
+              <span class="value">JavaScript, Extension APIs (Storage / Identity / Side Panel), Supabase</span>
+            </div>
+          </div>
+          <div class="work-overview">
+            <h4>서비스 개요</h4>
+            <p>백준 온라인 저지(BOJ) 사이트의 서비스 중단에 대비하여 제작한 Chrome 익스텐션. <br>
+              서비스 중단 후에도 문제는 조회가 가능하다는 전제 아래, 사이드 패널로 익스텐션을 열고
+              본인의 코드를 바로 채점할 수 있도록 함.</p>
+          </div>
+          <div class="work-features">
+            <h4>제공 기능</h4>
+            <ol>
+              <li>10개 언어 지원</li>
+              <li>백준의 예제 케이스뿐만 아니라 AI나 커뮤니티에서 공유된 히든 테스트 케이스도 함께 채점 가능</li>
+              <li>Github 자동 푸시</li>
+            </ol>
+          </div>
+        </div>
+        <div class="work-right reveal reveal-delay-1">
+          <h3>배운 점 및 성과</h3>
+          <div class="work-achievement">
+            <p>클라이언트의 DB 직접 접근을 제거하기 위해 Edge Function을 API Gateway로 활용한 서버리스 보안 아키텍처를 설계</p>
+          </div>
+          <div class="work-achievement">
+            <p>데이터의 민감도와 사용 기간에 따라 저장 방식을 분리하여 보안성과 편의성 확보</p>
+          </div>
+          <div class="project-screenshots" style="margin-top: 16px;">
+            <img src="assets/boj_screenshot.png" alt="BOJ Never Die 스크린샷" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <span class="page-num">10</span>
+    </section>
+
+    <!-- ===== Page 11: Find Blue ===== -->
+    <section class="section section-project" id="section-10">
+      <div class="section-header">
+        <div class="left">
+          <span class="label-small">PORTFOLIO</span>
+          <span class="label-kr">프로젝트</span>
+        </div>
+        <div class="right">
+          <span class="label-en">DEVELOPER KIM HANUL</span>
+          <span class="label-en-large">PROJECTS</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <div class="work-left reveal">
+          <div class="project-links">
+            <a href="https://github.com/HanuKim/find-blue" target="_blank">
+              <svg class="icon-link" viewBox="0 0 16 16" fill="currentColor">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              Github
+            </a>
+          </div>
+          <h2 class="work-project-title">자영업자를 위한 상권분석 서비스, Find Blue</h2>
+          <div class="work-meta">
+            <div class="work-meta-row">
+              <span class="label">제작기간</span>
+              <span class="value">2026. 04. 06 – 2026. 04. 12</span>
+              <span class="work-badge">7일 소요</span>
+            </div>
+            <div class="work-meta-row">
+              <span class="label">기여도</span>
+              <span class="value">100 / 100%</span>
+              <span class="work-badge">1인 개발</span>
+            </div>
+            <div class="work-meta-row">
+              <span class="label">사용기술</span>
+              <span class="value">React, Next.js, TypeScript, snowflake-sdk, Streamlit, XGBoost</span>
+            </div>
+          </div>
+          <div class="work-overview">
+            <h4>서비스 개요</h4>
+            <p>수요(카드 내역 데이터)와 공급(유사 업종 업장 개수) 간의 격차, 상권 특성(부동산, 유동인구, 대중교통 접근성) 등을 반영하여 데이터 기반의 정규화된 점수를 산출하고, 이를 바탕으로
+              사용자의 희망 업종을 고려해 최적의 입지를 분석해주는 서비스.</p>
+          </div>
+          <div class="work-features">
+            <h4>제공 기능</h4>
+            <ol>
+              <li>희망 업종 별 최적 입지 추천 및 시각화</li>
+              <li>AI 기반 3개월 간의 상권 변화 예측</li>
+              <li>사용자 맞춤형 AI 분석 리포트 제공</li>
+            </ol>
+          </div>
+        </div>
+        <div class="work-right reveal reveal-delay-1">
+          <h3>배운 점 및 성과</h3>
+          <div class="work-achievement">
+            <p>Snowflake SDK와 같은 서버 전용 라이브러리를 API 계층으로 분리하여 Next.js 빌드 오류 해결</p>
+          </div>
+          <div class="work-achievement">
+            <p>Snowflake 인증 정보가 없는 경우에도 Mock 데이터로 대체하여 개발할 수 있도록 설계</p>
+          </div>
+          <div class="project-screenshots overlap-v" style="margin-top: 16px;">
+            <img src="assets/findblue_map.png" alt="Find Blue 지도 스크린샷" loading="lazy">
+            <img src="assets/findblue_table.png" alt="Find Blue 입지 추천 테이블" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <span class="page-num">11</span>
+    </section>
+
+    <!-- ===== Page 12: Agora-X ===== -->
+    <section class="section section-project" id="section-11">
+      <div class="section-header">
+        <div class="left">
+          <span class="label-small">PORTFOLIO</span>
+          <span class="label-kr">프로젝트</span>
+        </div>
+        <div class="right">
+          <span class="label-en">DEVELOPER KIM HANUL</span>
+          <span class="label-en-large">PROJECTS</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <div class="work-left reveal">
+          <div class="project-links">
+            <a href="https://agora-x.onrender.com/" target="_blank">
+              <svg class="icon-link" viewBox="0 0 16 16" fill="currentColor">
+                <path
+                  d="M4.715 6.542L3.343 7.914a3 3 0 104.243 4.243l1.828-1.829A3 3 0 008.586 5.5L8 6.086a1.002 1.002 0 00-.154.199 2 2 0 01.861 3.337L6.88 11.45a2 2 0 11-2.83-2.83l.793-.792a4.018 4.018 0 01-.128-1.287z" />
+                <path
+                  d="M6.586 4.672A3 3 0 007.414 9.5l.775-.776a2 2 0 01-.896-3.346L9.12 3.55a2 2 0 112.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 10-4.243-4.243L6.586 4.672z" />
+              </svg>
+              서비스 바로가기
+            </a>
+            <a href="https://github.com/HanuKim/agora-x" target="_blank">
+              <svg class="icon-link" viewBox="0 0 16 16" fill="currentColor">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              Github
+            </a>
+          </div>
+          <h2 class="work-project-title">AI 기반 토론 커뮤니티, Agora-X</h2>
+          <div class="work-meta">
+            <div class="work-meta-row">
+              <span class="label">제작기간</span>
+              <span class="value">2026. 03. 02 – 2026. 03. 23</span>
+              <span class="work-badge">22일 소요</span>
+            </div>
+            <div class="work-meta-row">
+              <span class="label">기여도</span>
+              <span class="value">90 / 100%</span>
+              <span class="work-badge">2인 개발</span>
+            </div>
+            <div class="work-meta-row">
+              <span class="label">사용기술</span>
+              <span class="value">React, TypeScript, Framer Motion, IndexedDB</span>
+            </div>
+          </div>
+          <div class="work-overview">
+            <h4>서비스 개요</h4>
+            <p>AI 기반의 시민 토론 플랫폼으로, 사용자들이 쟁점별로 자신의 의견을 형성해나가고 반대 입장의 의견과 성숙하게 토론할 수 있도록 돕는 서비스.</p>
+          </div>
+          <div class="work-features">
+            <h4>제공 기능</h4>
+            <ol>
+              <li>AI가 뉴스기사를 바탕으로 쟁점을 도출하고 사용자의 쟁점별 지식 수준 세팅값을 참고하여 쟁점에 대한 설명과 찬반 논거 제시</li>
+              <li>AI에게 사회자의 역할을 부여하여 사용자의 입장과 반대 의견을 제시해주고, 사용자는 이에 대해 답변하여 성숙한 토론을 진행할 수 있도록 유도</li>
+              <li>토론 주제별로 익명 ID를 부여하여 특정인의 의견에 무게가 실리는 것을 방지</li>
+            </ol>
+          </div>
+        </div>
+        <div class="work-right reveal reveal-delay-1">
+          <h3>배운 점 및 성과</h3>
+          <div class="work-achievement">
+            <p>백엔드 서버 없이 Frontend 단일 아키텍처로 구현하며 AI가 생성하는 데이터 등 민감 정보는 없지만
+              호출 비용이 큰 데이터를 IndexedDB에 TTL 7일로 저장해두어 AI 호출 비용 최소화</p>
+          </div>
+          <div class="project-screenshots overlap" style="margin-top: 16px;">
+            <img src="assets/agorax_4_584x698.png" alt="Agora-X 메인 페이지 스크린샷" loading="lazy">
+            <img src="assets/agorax_5_723x411.png" alt="Agora-X 토론 페이지 스크린샷" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <span class="page-num">12</span>
+    </section>
+
+    <!-- ===== Page 13: Thank You ===== -->
+    <section class="section section-thanks" id="section-12">
+      <div class="section-header">
+        <div class="left">
+          <span class="label-small">PORTFOLIO</span>
+        </div>
+        <div class="right">
+          <span class="label-en">DEVELOPER KIM HANUL</span>
+          <span class="label-en-large">~ 2026. 06.</span>
+        </div>
+      </div>
+      <div class="thanks-content">
+        <div class="thanks-left reveal">
+          <p class="big-text">읽어주셔서<br>감사합니다 :)</p>
+          <p class="en-text">THANK YOU FOR CHECKING OUT<br>MY PORTFOLIO.</p>
+        </div>
+        <div class="thanks-right reveal reveal-delay-2">
+          <p class="dev-name">DEVELOPER, KIM HANUL</p>
+          <p class="contact-info">
+            <a href="mailto:dev.hanulkim@gmail.com">dev.hanulkim@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
