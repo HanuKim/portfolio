@@ -57,6 +57,13 @@
     if (index === current && !instant) return;
 
     current = index;
+    sessionStorage.setItem('portfolio_page', index);
+    if (window.history.replaceState) {
+      window.history.replaceState(null, null, `#page-${index}`);
+    } else {
+      window.location.hash = `#page-${index}`;
+    }
+
     const offset = -index * 100;
 
     if (instant) {
@@ -80,8 +87,24 @@
     }
   }
 
-  // Initialize position
-  goTo(0, true);
+  // Initialize position (restoring page on load/reload)
+  let initialPage = 0;
+  const hash = window.location.hash;
+  if (hash && hash.startsWith('#page-')) {
+    const idx = parseInt(hash.replace('#page-', ''), 10);
+    if (!isNaN(idx) && idx >= 0 && idx < TOTAL) {
+      initialPage = idx;
+    }
+  } else {
+    const saved = sessionStorage.getItem('portfolio_page');
+    if (saved !== null) {
+      const idx = parseInt(saved, 10);
+      if (!isNaN(idx) && idx >= 0 && idx < TOTAL) {
+        initialPage = idx;
+      }
+    }
+  }
+  goTo(initialPage, true);
 
   // ===== Navigation Dots =====
   function updateNavDots(index) {
@@ -113,6 +136,7 @@
   const WHEEL_THRESH = 50;
 
   scrollContainer.addEventListener('wheel', (e) => {
+    if (e.ctrlKey) return; // Ignore pinch-to-zoom
     e.preventDefault();
 
     if (isAnimating) return;
@@ -186,5 +210,73 @@
 
   // Pre-reveal current section on load
   triggerReveal(0);
+
+  // ===== Fullscreen Guide =====
+  const fullscreenGuide = document.getElementById('fullscreenGuide');
+  const fullscreenClose = document.getElementById('fullscreenClose');
+  const fullscreenInner = fullscreenGuide ? fullscreenGuide.querySelector('.fullscreen-guide-inner') : null;
+  let guideDismissed = false;
+  let lastFullscreenState = null;
+
+  function isFullscreen() {
+    const html5Fs = !!(document.fullscreenElement ||
+                       document.webkitFullscreenElement ||
+                       document.mozFullScreenElement ||
+                       document.msFullscreenElement);
+    if (html5Fs) return true;
+
+    // Detect F11 / macOS green maximize button
+    const widthDiff = Math.abs(window.innerWidth - window.screen.width);
+    const heightDiff = Math.abs(window.innerHeight - window.screen.height);
+    return widthDiff < 10 && heightDiff < 10;
+  }
+
+  function updateGuideVisibility() {
+    if (!fullscreenGuide) return;
+    const currentFs = isFullscreen();
+    if (currentFs === lastFullscreenState && !guideDismissed) return;
+    lastFullscreenState = currentFs;
+
+    if (guideDismissed || currentFs) {
+      fullscreenGuide.classList.add('hidden');
+    } else {
+      fullscreenGuide.classList.remove('hidden');
+    }
+  }
+
+  // Check on load (after animation delay)
+  setTimeout(updateGuideVisibility, 1600);
+
+  // Listen for fullscreen change events
+  ['fullscreenchange', 'webkitfullscreenchange', 'mozfullscreenchange', 'MSFullscreenChange']
+    .forEach(evt => document.addEventListener(evt, updateGuideVisibility));
+
+  // Debounced resize handler for F11 detection
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(updateGuideVisibility, 100);
+  });
+
+  // Click inner → request fullscreen
+  if (fullscreenInner) {
+    fullscreenInner.addEventListener('click', (e) => {
+      if (e.target === fullscreenClose) return;
+      const el = document.documentElement;
+      if (el.requestFullscreen) el.requestFullscreen();
+      else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+      else if (el.mozRequestFullScreen) el.mozRequestFullScreen();
+      else if (el.msRequestFullscreen) el.msRequestFullscreen();
+    });
+  }
+
+  // Close button → dismiss permanently
+  if (fullscreenClose) {
+    fullscreenClose.addEventListener('click', (e) => {
+      e.stopPropagation();
+      guideDismissed = true;
+      fullscreenGuide.classList.add('hidden');
+    });
+  }
 
 })();
