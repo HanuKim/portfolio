@@ -531,7 +531,7 @@ body {
 .about-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px 40px;
+  gap: 30px 40px;
   flex: 1;
   max-height: fit-content;
 }
