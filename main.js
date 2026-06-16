@@ -220,9 +220,9 @@
 
   function isFullscreen() {
     const html5Fs = !!(document.fullscreenElement ||
-                       document.webkitFullscreenElement ||
-                       document.mozFullScreenElement ||
-                       document.msFullscreenElement);
+      document.webkitFullscreenElement ||
+      document.mozFullScreenElement ||
+      document.msFullscreenElement);
     if (html5Fs) return true;
 
     // Detect F11 / macOS green maximize button
